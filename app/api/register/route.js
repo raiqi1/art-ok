@@ -25,7 +25,7 @@ export async function POST (req) {
     const bytes = await file.arrayBuffer()
     const buffer = Buffer.from(bytes)
 
-    const profileImagePath=`C:/Users/Phuc/Desktop/artify/public/uploads/${file.name}`
+    const profileImagePath=`E:/belajar web/ecommerce_n/artify/public/uploads/${file.name}`
     await writeFile(profileImagePath, buffer)
 
     console.log(`open ${profileImagePath} to see the uploaded files`)
